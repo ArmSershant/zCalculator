@@ -1,0 +1,52 @@
+#calculator {
+    background: #00000038;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#result {
+    background: white;
+    text-align: right;
+    font-size: 42px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    font-family: tahoma;
+    border-radius: 5px 1px;
+    background: white;
+}
+
+.double-action {
+    background: yellowgreen;
+    font-size: 29px;
+    color: white;
+}
+
+.numeric {
+    background: hotpink;
+    border: none;
+    font-size: 29px;
+    color: white;
+}
+
+.single-action {
+    background: orangered;
+    color: white;
+
+}
+
+#equal {
+    padding: 20px 45px;
+    background-color: yellow;
+}
