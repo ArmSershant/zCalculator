@@ -16,7 +16,7 @@ function writeNumber() {
     result.style.fontSize = "32px"
   }
   result.innerText += this.innerText
-  if (result.innerText.includes(".") && result.innerText < 1) {
+  if (result.innerText.includes(".") && result.innerText < 1 && result.innerText > 0) {
     result.innerText = "0" + result.innerText
   }
 }
