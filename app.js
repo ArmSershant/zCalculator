@@ -9,20 +9,22 @@ singles.forEach((elm) => (elm.onclick = singleActionHandler))
 doubles.forEach((elm) => (elm.onclick = doubleActionHandler))
 
 function writeNumber() {
-  if (result.innerText.startsWith("0")) {
+  if (
+    result.innerText == "0" &&
+    result.innerText.length == 1 &&
+    this.innerText != "."
+  ) {
     result.innerText = result.innerText.substring(1)
   }
   if (result.innerText.length > 10) {
     result.style.fontSize = "32px"
   }
-  result.innerText += this.innerText
-  if (
-    result.innerText.includes(".") &&
-    result.innerText < 1 &&
-    result.innerText > 0
-  ) {
-    result.innerText = "0" + result.innerText
+  if (this.innerText == ".") {
+    if (result.innerText.includes(".")) {
+      return
+    }
   }
+  result.innerText += this.innerText
 }
 
 function singleActionHandler() {
